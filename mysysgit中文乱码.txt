@@ -1,0 +1,6 @@
+ 默认安装的msysGit的shell环境中无法输入中文。为了能在shell界面中输入中文，需要修改配置文件/etc/inputrc，增加或修改相关的配置如下：
+   # disable/enable 8bit input
+   set meta-flag on
+   set input-meta on
+   set output-meta on
+   set convert-meta off
