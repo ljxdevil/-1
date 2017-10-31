@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./swiper-3.3.1.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="top"><img src="./sc/index_top.png" alt=""></div>
+            <div class="times">
+                <ul>
+                    <li>已报名<span>126</span></li>
+                    <li>投票次数<span>126</span></li>
+                    <li>浏览量<span>126</span></li>
+                </ul>
+            </div>
+            <div class="ipt">
+                <span>
+                    <input type="text" name="" placeholder="请输入">
+                    <img src="./sc/index_search.png" alt="">
+                </span>
+            </div>
+        </div>
+        <div class="section">
+            <ol>
+                <li>每日推荐</li>
+                <li>投票排行</li>
+                <li>TOP 300</li>
+            </ol>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="dls swiper-slider">
+                        <dl>
+                            <dt><img src="./sc/maomi.png" alt=""></dt>
+                            <dd>页面1猫咪1种1号</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./sc/maomi.png" alt=""></dt>
+                            <dd>页面1猫咪1种2号</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./sc/maomi2.png" alt=""></dt>
+                            <dd>页面1猫咪2种1号</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./sc/maomi2.png" alt=""></dt>
+                            <dd>页面1猫咪2种1号</dd>
+                        </dl>
+                    </div>
+                    <div class="dls swiper-slider">
+                        <dl>
+                            <dt><img src="./sc/maomi.png" alt=""></dt>
+                            <dd>页面2猫咪1种1号</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./sc/maomi.png" alt=""></dt>
+                            <dd>页面2猫咪1种2号</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./sc/maomi2.png" alt=""></dt>
+                            <dd>页面2猫咪2种1号</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./sc/maomi2.png" alt=""></dt>
+                            <dd>页面2猫咪2种1号</dd>
+                        </dl>
+                    </div>
+                    <div class="dls swiper-slider">
+                        <dl>
+                            <dt><img src="./sc/maomi.png" alt=""></dt>
+                            <dd>页面3猫咪1种1号</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./sc/maomi.png" alt=""></dt>
+                            <dd>页面3猫咪1种2号</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./sc/maomi2.png" alt=""></dt>
+                            <dd>页面3猫咪2种1号</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./sc/maomi2.png" alt=""></dt>
+                            <dd>页面3猫咪2种1号</dd>
+                        </dl>
+                    </div>
+                    <!-- div.swiper -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./jquery-1.8.3.min.js"></script>
+    <script src="./swiper-3.3.1.min.js">
+    </script>
+    <script>
+        var swipers = new Swiper('.swiper-container', {
+
+        });
+        $('ol li').on('click', function() {
+            $(this).addClass('green').siblings().removeClass('green')
+                //     // $('.swiper-slider').eq()
+                // $('.swiper-wrapper').transform: {
+                //     translate3d(0 px, 0 px, 0 px);
+                // }
+        })
+    </script>
+</body>
+
+</html>
